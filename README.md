@@ -1,12 +1,42 @@
-# React + Vite
+# E-Commerce Platform (Code Chefs)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, modular e-commerce web app built with **React 19**, **Vite 7**, **TailwindCSS 4**, and **ShadCN UI** — powered by Zustand for state management and Supabase for backend services.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+- Product listing, details, and cart
+- Authentication via Supabase
+- Checkout & order summary
+- Wishlist & saved items
+- Zustand for global state
+- Beautiful UI with TailwindCSS + ShadCN
+- Routing with React Router v7
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+| Tech                | Role                        |
+|---------------------|-----------------------------|
+| React 19            | Frontend                 |
+| Vite 7              | Bundler                   |
+| Tailwind CSS v4.1   | Styling                     |
+| ShadCN UI           | Component Library           |
+| Zustand             | Global state management     |
+| Supabase            | Backend as a Service (BaaS) |
+| React Router v7     | Client-side routing         |
+| react-icons              | Icon system                 |
+
+---
+
+
+### How to run the porject
+
+```bash
+git clone https://github.com/CodeWithMe2025/E-Commerce-code-chefs.git
+cd E-Commerce-code-chefs
+npm i
+npm run dev
+```
