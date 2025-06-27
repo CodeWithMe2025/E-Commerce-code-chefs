@@ -19,6 +19,7 @@ function App() {
             className="w-16 h-16 hover:scale-110 transition-transform"
             alt="React logo"
           />
+          login added by supabase
         </a>
       </div>
 
