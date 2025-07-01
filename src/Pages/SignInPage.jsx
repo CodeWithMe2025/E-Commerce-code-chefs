@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { SingInSchema } from "@/validators/SingInSchema";
 import { useState } from "react";
-import LoadingSpinner from "../ui/LoadingSpinner";
+import LoadingSpinner from "../components/ui/LoadingSpinner";
 
 
 const validCredentials = {
