@@ -13,8 +13,6 @@ const validCredentials = {
 const SignInPage = () => {
 
     const [isLoading, setIsLoading] = useState(false)
-    const [email, setEmail] = useState(null)
-    const [password, setPassword] = useState(null)
     const [error, setError] = useState(false)
 
     const {
@@ -51,13 +49,11 @@ const SignInPage = () => {
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-m font-medium text-gray-700 mb-1">Email</label>
                         <input
-                            // type="email"
                             id="email"
                             {...register("email")}
                             className="w-full px-2 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-600"
                             placeholder="you@gmail.com"
                             disabled={isLoading}
-                            // onChange={(e) => setEmail(e.target.value)}
                         />
                         {errors.email && <p className="py-2 text-sm font-medium text-red-500">{errors.email.message}</p>}
                     </div>
@@ -71,7 +67,6 @@ const SignInPage = () => {
                             className="w-full px-2 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-600"
                             placeholder="Enter you password"
                             disabled={isLoading}
-                            // onChange={(e) => setPassword(e.target.value)}
                         />
                         {errors.password && <p className="py-2 text-sm font-medium text-red-500">{errors.password.message}</p>}
                     </div>
@@ -82,7 +77,6 @@ const SignInPage = () => {
                         disabled={isLoading}
                     >
                         {isLoading ? <LoadingSpinner /> : "Sign In"}
-                        {/* Sign In */}
                     </button>
 
                     <p className="text-sm text-center text-red-500 mt-4">
