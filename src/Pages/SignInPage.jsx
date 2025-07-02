@@ -77,7 +77,6 @@ const SignInPage = () => {
                         disabled={isLoading}
                     >
                         {isLoading ? <LoadingSpinner /> : "Sign In"}
-                        {/* Sign In */}
                     </button>
 
                     <p className="text-sm text-center text-red-500 mt-4">
