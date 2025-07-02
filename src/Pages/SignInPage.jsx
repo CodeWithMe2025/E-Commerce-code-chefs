@@ -13,8 +13,6 @@ const validCredentials = {
 const SignInPage = () => {
 
     const [isLoading, setIsLoading] = useState(false)
-    const [email, setEmail] = useState(null)
-    const [password, setPassword] = useState(null)
     const [error, setError] = useState(false)
 
     const {
@@ -31,7 +29,7 @@ const SignInPage = () => {
         setTimeout(() => {
             if (data.email === validCredentials.email && data.password === validCredentials.password) {
                 setError(false);
-                console.log("Form Submitted ✅");
+                console.log("Form Submitted");
             } else {
                 setError(true);
             }
@@ -43,21 +41,19 @@ const SignInPage = () => {
 
 
     return (
-        <div className="bg-gray-100 flex items-center justify-center min-h-screen">
-            <div className="bg-white p-5 rounded shadow-md w-full max-w-sm">
+            <div className="bg-gray-100 border-gray-200 border-2 rounded shadow-md w-full max-w-sm p-5 my-20">
                 <h2 className="text-2xl font-bold text-center text-gray-950 mb-6">Login</h2>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-m font-medium text-gray-700 mb-1">Email</label>
                         <input
-                            // type="email"
+                            type="email"
                             id="email"
                             {...register("email")}
                             className="w-full px-2 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-600"
                             placeholder="you@gmail.com"
                             disabled={isLoading}
-                            // onChange={(e) => setEmail(e.target.value)}
                         />
                         {errors.email && <p className="py-2 text-sm font-medium text-red-500">{errors.email.message}</p>}
                     </div>
@@ -71,7 +67,6 @@ const SignInPage = () => {
                             className="w-full px-2 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-600"
                             placeholder="Enter you password"
                             disabled={isLoading}
-                            // onChange={(e) => setPassword(e.target.value)}
                         />
                         {errors.password && <p className="py-2 text-sm font-medium text-red-500">{errors.password.message}</p>}
                     </div>
@@ -94,8 +89,6 @@ const SignInPage = () => {
                     </p>
                 </form>
             </div>
-        </div>
-
     )
 }
 
