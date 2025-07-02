@@ -122,3 +122,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('./fonts/Fontspring-DEMO-integralcf-bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-integral {
+  font-family: 'Integral CF', sans-serif;
+}
