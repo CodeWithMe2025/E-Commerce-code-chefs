@@ -135,3 +135,14 @@
 .font-integral {
   font-family: 'Integral CF', sans-serif;
 }
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-satoshi {
+    font-family: 'Satoshi', sans-serif;
+}
