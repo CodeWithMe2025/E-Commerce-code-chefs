@@ -3,7 +3,7 @@ import RootLayout from "./RootLayout";
 import { Route } from "react-router-dom"
 import { useState } from "react";
 import SignInPage from "@/Pages/SignInPage";
-import Home from "@/Pages/Landing page/Home";
+import Home from "@/Pages/Home";
 
 export const Router = createBrowserRouter(
     createRoutesFromChildren(

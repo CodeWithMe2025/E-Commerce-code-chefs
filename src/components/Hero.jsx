@@ -1,6 +1,5 @@
 import React from 'react'
-import heroImage from '../../assets/hero-image.webp'
-import './landingPageStyels.css'
+import heroImage from '../assets/hero-image.webp'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -10,7 +9,7 @@ const Hero = () => {
 
     return (
         <>
-            <section className='Hero flex flex-col md:flex-row items-center justify-between px-4 p-10 lg:px-14 py-12 pb-0 w-full min-w-full mx-auto'>
+            <section className='Hero flex flex-col md:flex-row items-center justify-between px-4 p-10 lg:px-14 py-12 pb-0 w-full min-w-full mx-auto bg-[#F2F0F1]'>
 
                 <div className="hero-content flex flex-col lg:gap-9 md:w-3xl">
                     <div className="hero-text flex flex-col gap-8">
@@ -25,7 +24,7 @@ const Hero = () => {
                             <strong className="font-satoshi text-2xl font-bold">200+</strong>
                             <span className="font-satoshi text-gray-500 text-sm xl:text-xl 2xl:text-2xl">International Brands</span>
                         </div>
-                        <div className="midle-num flex flex-col">
+                        <div className="midle-num flex flex-col border border-[#0000001A] border-y-0 p-[15px]">
                             <strong className="font-satoshi text-2xl font-bold ">2,000+</strong>
                             <span className="font-satoshi text-gray-500 text-sm xl:text-xl 2xl:text-2xl">High-Quality Products</span>
                         </div>
