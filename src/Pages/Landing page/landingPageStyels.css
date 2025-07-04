@@ -1,34 +1,10 @@
-
-.Hero{
+.Hero {
     background-color: #F2F0F1;
-    /* border: solid red; */
 }
 
-.brands-hlder{
-    /* border: solid red; */
-    gap: 55px;
+.midle-num{
+    border: solid #0000001A;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 15px;
 }
-
-@media (width<=1045px) {
-    .brands-hlder{
-        /* border: solid greenyellow; */
-        gap: 25px;
-    }
-
-}
-
-@media (width<=640px) {
-    .brand-logo{
-        /* border: solid red; */
-        width: 150px !important;
-    } 
-}
-
-@media (width<=510px) {
-    .brand-logo{
-        /* border: solid greenyellow; */
-        width: 100px !important;
-    } 
-}
-
- /* border border-r-gray-400 border-l-gray-400 border-t-0 border-b-0 */
